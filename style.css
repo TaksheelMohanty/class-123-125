@@ -1,0 +1,51 @@
+.body{
+    background-size: cover;
+}
+
+.note{
+    color: black;
+    font-size: 15px;
+}
+
+.heading{
+    font-size: 23px;
+    width: 100%;
+    margin: 0;
+}
+
+.div_speed{
+    float: left;
+    margin-left: 20px;
+}
+
+.div_volume{
+    float: right;
+    margin-right: 20px;
+}
+
+.image{
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.heading_3{
+    font-size: 20px;
+    margin: 50px;
+}
+
+.button{
+    font-size: 20px;
+    border-radius: 25px;
+    color: black;
+    width: 150px;
+    height: 50px;
+}
+
+canvas{
+    border-color: white;
+    border-width: 5px;
+    border-style:dotted;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px black;
+}
