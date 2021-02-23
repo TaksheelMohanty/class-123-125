@@ -111,35 +111,35 @@ function draw(){
     strokeWeight(10);
     line(0, 500, 100, 500);
     
-    if(scoreRightWrist > 0.2){
-        circle(rightWristX, rightWristY, 20);
+    if(scoreLeftWrist > 0.2){
+        circle(leftWristX, leftWristY, 20);
 
-        if(rightWristY > 0 && rightWristY <= 100){
+        if(leftWristY > 0 && leftWristY <= 100){
             document.getElementById("speed").innerHTMl = "Speed = 0.5x";
             song.rate(0.5);
         }
-        else if(rightWristY > 100 && rightWristY <= 200){
+        else if(leftWristY > 100 && leftWristY <= 200){
             document.getElementById("speed").innerHTML = "Speed = 1x";
             song.rate(1);
         }
-        else if(rightWristY > 200 && rightWristY <= 300){
+        else if(leftWristY > 200 && leftWristY <= 300){
             document.getElementById("speed").innerHTML = "Speed = 1.5x";
             song.rate(1.5);
         }
-        else if(rightWristY > 300 && rightWristY <= 400){
+        else if(leftWristY > 300 && leftWristY <= 400){
             document.getElementById("speed").innerHTML = "Speed = 2x";
             song.rate(2);
         }
-        else if(rightWristY > 400 && rightWristY <= 500){
+        else if(leftWristY > 400 && leftWristY <= 500){
             document.getElementById("speed").innerHTML = "Speed = 2.5x";
             song.rate(2.5);
         }
     }
     
-    if(scoreLeftWrist > 0.2){
+    if(scorerightWrist > 0.2){
         circle(leftWristX, leftWristY, 20);
-        position_leftwrist = Number(leftWristY);
-        removed_decimals = floor(position_leftwrist);
+        position_rightwrist = Number(rightWristY);
+        removed_decimals = floor(position_rightwrist);
         volume = removed_decimals/500;
         document.getElementById("volume").innerHTML = "Volume = " + volume;
         song.setVolume(volume);
